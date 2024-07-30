@@ -1,0 +1,61 @@
+/* RecipeList.css */
+
+/* Container for the entire RecipeList component */
+.recipe-list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* Style for each recipe card */
+.recipe-list-container ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.recipe-list-container li {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  max-width: 300px;
+  background-color: #555;
+}
+
+/* Style for the image in each card */
+.recipe-list-container img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Style for the title and description in each card */
+.recipe-list-container .buttons {
+  display: none;
+}
+
+.recipe-list-container h3 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.recipe-list-container p {
+  color: #555;
+  font-size: 1rem;
+  margin: 0;
+  color: #ccc;
+}
+
+/* Hover effect for each card */
+.recipe-list-container li:hover {
+  transform: scale(1.05);
+}
+
+.recipe-list-container li:hover .buttons {
+  display: block;
+}
